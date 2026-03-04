@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XF Store - Поиск</title>
+    <link rel="stylesheet" href="search.css">
+    <link rel="icon" href="favicon (1).ico" type="image/x-icon"> <!-- Логотип сайта -->
+</head>
+
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <h1>XF Store</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#">Поиск</a></li>
+                    <li><a href="#">Профиль</a></li>
+                    <li><a href="#">Корзина (0)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Поле ввода поиска -->
+    <input type="text" class="search-input" placeholder="Название игры">
+
+    <!-- Основная секция -->
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Все игры</h2>
+                <div class="gallery">
+                    <!-- Блоки с изображениями и кнопками "Подробнее" -->
+                    <div class="game-item">
+                        <img src="mario.jpg" alt="Super Mario Bros">
+                        <a href="#" class="btn" onclick="openModal('gameModal1')">Подробнее</a>
+                    </div>
+                    <div class="game-item">
+                        <img src="zel.jpg" alt="Legend of Zelda">
+                        <a href="#" class="btn" onclick="openModal('gameModal2')">Подробнее</a>
+                    </div>
+                    <div class="game-item">
+                        <img src="capsule_616x353.jpg" alt="Fifa 25">
+                        <a href="#" class="btn" onclick="openModal('gameModal3')">Подробнее</a>
+                    </div>
+                    <div class="game-item">
+                        <img src="gta.jpg" alt="Grand Theft Auto 5">
+                        <a href="#" class="btn" onclick="openModal('gameModal4')">Подробнее</a>
+                    </div>
+                    <div class="game-item">
+                        <img src="Rectangle 83.png" alt="Need for Speed">
+                        <a href="#" class="btn" onclick="openModal('gameModal5')">Подробнее</a>
+                    </div>
+                    <div class="game-item">
+                        <img src="download.jpg" alt="Uncharted">
+                        <a href="#" class="btn" onclick="openModal('gameModal6')">Подробнее</a>
+                    </div>
+                    <div class="game-item">
+                        <img src="punk.jpg" alt="Cyberpunk 2077">
+                        <a href="#" class="btn" onclick="openModal('gameModal7')">Подробнее</a>
+                    </div>
+                    <div class="game-item">
+                        <img src="images.jpg" alt="Fortnite">
+                        <a href="#" class="btn" onclick="openModal('gameModal8')">Подробнее</a>
+                    </div>
+                    <div class="game-item">
+                        <img src="genshin.jpg" alt="Genshin Impact">
+                        <a href="#" class="btn" onclick="openModal('gameModal9')">Подробнее</a>
+                    </div>
+                    <div class="game-item">
+                        <img src="main.jpg" alt="Minecraft">
+                        <a href="#" class="btn" onclick="openModal('gameModal10')">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Модальные окна для каждой игры -->
+    <!-- Модальное окно для Super Mario -->
+    <div class="game-modal" id="gameModal1">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('gameModal1')">&times;</span>
+            <img src="mario.jpg" alt="Game Image" class="game-image">
+            <h3>Super Mario</h3>
+            <p>Классическая платформенная игра с Mario в главной роли. Спасите принцессу от Bowser в мире грибов и приключений!</p>
+            <p><strong>Цена:</strong> 2000 руб</p>
+            <p><strong>Системные требования:</strong></p>
+            <ul>
+                <li>OC: Windows 10 / macOS</li>
+                <li>Процессор: Intel Core i5</li>
+                <li>Память: 8 GB RAM</li>
+                <li>Графика: Integrated</li>
+            </ul>
+            <a href="buy.html" class="btn buy-btn">Купить</a>
+        </div>
+    </div>
+
+    <!-- Другие модальные окна для каждой игры в будущес -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 XF Store. Все права защищены.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
